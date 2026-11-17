@@ -1,0 +1,252 @@
+{
+ "surface": [
+  {
+   "uid": "4992-23283-0000",
+   "spk": "4992",
+   "text": "BUT THE MORE FORGETFULNESS HAD THEN PREVAILED THE MORE POWERFUL WAS THE FORCE OF REMEMBRANCE WHEN SHE AWOKE",
+   "orig": "audio/4992-23283-0000__orig.wav",
+   "prompt_uid": "4992-41806-0009",
+   "prompt_text": "exclaimed Bill Harmon to his wife as they went through the lighted hall.",
+   "recon": {
+    "6.25|64": "audio/4992-23283-0000__rec_r8_h64.wav",
+    "6.25|512": "audio/4992-23283-0000__rec_r8_h512.wav",
+    "3.125|64": "audio/4992-23283-0000__rec_r16_h64.wav",
+    "3.125|512": "audio/4992-23283-0000__rec_r16_h512.wav",
+    "2|64": "audio/4992-23283-0000__rec_r25_h64.wav",
+    "2|512": "audio/4992-23283-0000__rec_r25_h512.wav"
+   },
+   "tts": {
+    "6.25|64": "audio/4992-23283-0000__tts_r8_h64.wav",
+    "6.25|512": "audio/4992-23283-0000__tts_r8_h512.wav",
+    "3.125|64": "audio/4992-23283-0000__tts_r16_h64.wav",
+    "3.125|512": "audio/4992-23283-0000__tts_r16_h512.wav",
+    "2|64": "audio/4992-23283-0000__tts_r25_h64.wav",
+    "2|512": "audio/4992-23283-0000__tts_r25_h512.wav"
+   },
+   "prompt": "audio/4992-41806-0009__prompt.wav"
+  },
+  {
+   "uid": "672-122797-0003",
+   "spk": "672",
+   "text": "BUT THIS WAS WHAT THE TREE COULD NOT BEAR TO HEAR",
+   "orig": "audio/672-122797-0003__orig.wav",
+   "prompt_uid": "672-122797-0029",
+   "prompt_text": "How it will shine this evening\"!",
+   "recon": {
+    "6.25|64": "audio/672-122797-0003__rec_r8_h64.wav",
+    "6.25|512": "audio/672-122797-0003__rec_r8_h512.wav",
+    "3.125|64": "audio/672-122797-0003__rec_r16_h64.wav",
+    "3.125|512": "audio/672-122797-0003__rec_r16_h512.wav",
+    "2|64": "audio/672-122797-0003__rec_r25_h64.wav",
+    "2|512": "audio/672-122797-0003__rec_r25_h512.wav"
+   },
+   "tts": {
+    "6.25|64": "audio/672-122797-0003__tts_r8_h64.wav",
+    "6.25|512": "audio/672-122797-0003__tts_r8_h512.wav",
+    "3.125|64": "audio/672-122797-0003__tts_r16_h64.wav",
+    "3.125|512": "audio/672-122797-0003__tts_r16_h512.wav",
+    "2|64": "audio/672-122797-0003__tts_r25_h64.wav",
+    "2|512": "audio/672-122797-0003__tts_r25_h512.wav"
+   },
+   "prompt": "audio/672-122797-0029__prompt.wav"
+  },
+  {
+   "uid": "2961-960-0007",
+   "spk": "2961",
+   "text": "BUT THEY HAVE NOTHING TO DO WITH THE INTERPRETATION OF PLATO AND IN SPIRIT THEY ARE OPPOSED TO HIM",
+   "orig": "audio/2961-960-0007__orig.wav",
+   "prompt_uid": "2961-961-0005",
+   "prompt_text": "Some poems of Solon were recited by the boys.",
+   "recon": {
+    "6.25|64": "audio/2961-960-0007__rec_r8_h64.wav",
+    "6.25|512": "audio/2961-960-0007__rec_r8_h512.wav",
+    "3.125|64": "audio/2961-960-0007__rec_r16_h64.wav",
+    "3.125|512": "audio/2961-960-0007__rec_r16_h512.wav",
+    "2|64": "audio/2961-960-0007__rec_r25_h64.wav",
+    "2|512": "audio/2961-960-0007__rec_r25_h512.wav"
+   },
+   "tts": {
+    "6.25|64": "audio/2961-960-0007__tts_r8_h64.wav",
+    "6.25|512": "audio/2961-960-0007__tts_r8_h512.wav",
+    "3.125|64": "audio/2961-960-0007__tts_r16_h64.wav",
+    "3.125|512": "audio/2961-960-0007__tts_r16_h512.wav",
+    "2|64": "audio/2961-960-0007__tts_r25_h64.wav",
+    "2|512": "audio/2961-960-0007__tts_r25_h512.wav"
+   },
+   "prompt": "audio/2961-961-0005__prompt.wav"
+  },
+  {
+   "uid": "8224-274381-0011",
+   "spk": "8224",
+   "text": "HIS CONDUCT AND PRESENCE OF MIND IN THIS EMERGENCE APPEARED CONSPICUOUS",
+   "orig": "audio/8224-274381-0011__orig.wav",
+   "prompt_uid": "8224-274384-0003",
+   "prompt_text": "or hath he given us any gift?",
+   "recon": {
+    "6.25|64": "audio/8224-274381-0011__rec_r8_h64.wav",
+    "6.25|512": "audio/8224-274381-0011__rec_r8_h512.wav",
+    "3.125|64": "audio/8224-274381-0011__rec_r16_h64.wav",
+    "3.125|512": "audio/8224-274381-0011__rec_r16_h512.wav",
+    "2|64": "audio/8224-274381-0011__rec_r25_h64.wav",
+    "2|512": "audio/8224-274381-0011__rec_r25_h512.wav"
+   },
+   "tts": {
+    "6.25|64": "audio/8224-274381-0011__tts_r8_h64.wav",
+    "6.25|512": "audio/8224-274381-0011__tts_r8_h512.wav",
+    "3.125|64": "audio/8224-274381-0011__tts_r16_h64.wav",
+    "3.125|512": "audio/8224-274381-0011__tts_r16_h512.wav",
+    "2|64": "audio/8224-274381-0011__tts_r25_h64.wav",
+    "2|512": "audio/8224-274381-0011__tts_r25_h512.wav"
+   },
+   "prompt": "audio/8224-274384-0003__prompt.wav"
+  }
+ ],
+ "rows": [
+  {
+   "uid": "1089-134686-0013",
+   "spk": "1089",
+   "text": "IF EVER HE WAS IMPELLED TO CAST SIN FROM HIM AND TO REPENT THE IMPULSE THAT MOVED HIM WAS THE WISH TO BE HER KNIGHT",
+   "orig": "audio/1089-134686-0013__orig.wav",
+   "mimi8": "audio/1089-134686-0013__mimi8.wav",
+   "flexi417": "audio/1089-134686-0013__flexi417.wav",
+   "sylber": "audio/1089-134686-0013__sylber.wav",
+   "ours_r313_d64": "audio/1089-134686-0013__ours_r313_d64.wav",
+   "ours_r417_d512_flow": "audio/1089-134686-0013__ours_r417_d512_flow.wav",
+   "ours_r417_d512_l2": "audio/1089-134686-0013__ours_r417_d512_l2.wav"
+  },
+  {
+   "uid": "1188-133604-0033",
+   "spk": "1188",
+   "text": "EVERY PLANT IN THE GRASS IS SET FORMALLY GROWS PERFECTLY AND MAY BE REALIZED COMPLETELY",
+   "orig": "audio/1188-133604-0033__orig.wav",
+   "mimi8": "audio/1188-133604-0033__mimi8.wav",
+   "flexi417": "audio/1188-133604-0033__flexi417.wav",
+   "sylber": "audio/1188-133604-0033__sylber.wav",
+   "ours_r313_d64": "audio/1188-133604-0033__ours_r313_d64.wav",
+   "ours_r417_d512_flow": "audio/1188-133604-0033__ours_r417_d512_flow.wav",
+   "ours_r417_d512_l2": "audio/1188-133604-0033__ours_r417_d512_l2.wav"
+  },
+  {
+   "uid": "1284-1180-0029",
+   "spk": "1284",
+   "text": "SOMETIMES IT IS CALLED A CRAZY QUILT BECAUSE THE PATCHES AND COLORS ARE SO MIXED UP",
+   "orig": "audio/1284-1180-0029__orig.wav",
+   "mimi8": "audio/1284-1180-0029__mimi8.wav",
+   "flexi417": "audio/1284-1180-0029__flexi417.wav",
+   "sylber": "audio/1284-1180-0029__sylber.wav",
+   "ours_r313_d64": "audio/1284-1180-0029__ours_r313_d64.wav",
+   "ours_r417_d512_flow": "audio/1284-1180-0029__ours_r417_d512_flow.wav",
+   "ours_r417_d512_l2": "audio/1284-1180-0029__ours_r417_d512_l2.wav"
+  },
+  {
+   "uid": "1580-141083-0042",
+   "spk": "1580",
+   "text": "MY SCHOLAR HAS BEEN LEFT VERY POOR BUT HE IS HARD WORKING AND INDUSTRIOUS HE WILL DO WELL",
+   "orig": "audio/1580-141083-0042__orig.wav",
+   "mimi8": "audio/1580-141083-0042__mimi8.wav",
+   "flexi417": "audio/1580-141083-0042__flexi417.wav",
+   "sylber": "audio/1580-141083-0042__sylber.wav",
+   "ours_r313_d64": "audio/1580-141083-0042__ours_r313_d64.wav",
+   "ours_r417_d512_flow": "audio/1580-141083-0042__ours_r417_d512_flow.wav",
+   "ours_r417_d512_l2": "audio/1580-141083-0042__ours_r417_d512_l2.wav"
+  }
+ ],
+ "cmos": {
+  "n_listeners": 9,
+  "ratings_total": 270,
+  "per_listener": {
+   "L01": 30,
+   "L02": 30,
+   "L03": 30,
+   "L04": 30,
+   "L05": 30,
+   "L06": 30,
+   "L07": 30,
+   "L08": 30,
+   "L09": 30
+  },
+  "target_per_condition": 160,
+  "rows": [
+   {
+    "tested": "This work, 4.17 tok/s x d=512, flow-matching decoder",
+    "other": "Ground truth",
+    "cmos": -0.373,
+    "ci95": 0.325,
+    "n": 51,
+    "pairs": 26,
+    "per_pair": 1.96
+   },
+   {
+    "tested": "This work, 4.17 tok/s x d=512, l2 decoder",
+    "other": "Ground truth",
+    "cmos": -1.061,
+    "ci95": 0.473,
+    "n": 49,
+    "pairs": 26,
+    "per_pair": 1.88
+   },
+   {
+    "tested": "Sylber",
+    "other": "Ground truth",
+    "cmos": -0.367,
+    "ci95": 0.395,
+    "n": 49,
+    "pairs": 27,
+    "per_pair": 1.81
+   },
+   {
+    "tested": "FlexiCodec 4.17 tok/s",
+    "other": "Ground truth",
+    "cmos": 0.039,
+    "ci95": 0.315,
+    "n": 51,
+    "pairs": 24,
+    "per_pair": 2.12
+   },
+   {
+    "tested": "This work, 4.17 tok/s x d=512, flow-matching decoder",
+    "other": "This work, 4.17 tok/s x d=512, l2 decoder",
+    "cmos": 0.571,
+    "ci95": 0.592,
+    "n": 35,
+    "pairs": 24,
+    "per_pair": 1.46
+   },
+   {
+    "tested": "This work, 4.17 tok/s x d=512, flow-matching decoder",
+    "other": "FlexiCodec 4.17 tok/s",
+    "cmos": -0.486,
+    "ci95": 0.413,
+    "n": 35,
+    "pairs": 22,
+    "per_pair": 1.59
+   }
+  ]
+ },
+ "cells": [
+  [
+   "6.25",
+   "64"
+  ],
+  [
+   "6.25",
+   "512"
+  ],
+  [
+   "3.125",
+   "64"
+  ],
+  [
+   "3.125",
+   "512"
+  ],
+  [
+   "2",
+   "64"
+  ],
+  [
+   "2",
+   "512"
+  ]
+ ]
+}

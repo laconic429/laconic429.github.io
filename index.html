@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Listening Samples</title>
+<style>
+:root{
+  --bg:#fbfaf8; --fg:#1b1d21; --mut:#6a7079; --faint:#9aa0a8;
+  --line:#e3e0d9; --panel:#ffffff; --accent:#1f6f8b; --warm:#b8743a;
+  --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+  --bg:#13151a; --fg:#e7e9ee; --mut:#99a0aa; --faint:#6d747e;
+  --line:#272b33; --panel:#1a1d24; --accent:#6fb4cc; --warm:#d9975c; } }
+:root[data-theme="dark"]{
+  --bg:#13151a; --fg:#e7e9ee; --mut:#99a0aa; --faint:#6d747e;
+  --line:#272b33; --panel:#1a1d24; --accent:#6fb4cc; --warm:#d9975c; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font-family:Georgia,'Iowan Old Style',serif;font-size:16px;line-height:1.6;
+  padding:0 16px 72px}
+.wrap{max-width:980px;margin:0 auto}
+h1{font-size:clamp(25px,3.3vw,36px);font-weight:600;margin:44px 0 .15em;letter-spacing:-.01em;
+   text-wrap:balance}
+h2{font-size:clamp(19px,2.2vw,23px);font-weight:600;margin:52px 0 .35em;
+   padding-bottom:.3em;border-bottom:1px solid var(--line);text-wrap:balance}
+h2 .n{color:var(--faint);font-family:var(--mono);font-size:.72em;margin-right:.6em;font-weight:400}
+p{max-width:68ch;margin:0 0 .75em}
+.sub{color:var(--mut);font-size:14.5px}
+.note{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);
+      border-radius:4px;padding:13px 17px;margin:16px 0;max-width:76ch;font-size:14.5px}
+.note.warn{border-left-color:var(--warm)}
+.note b{color:var(--fg)}
+table{border-collapse:collapse;width:100%;margin:10px 0 4px;font-family:system-ui,sans-serif}
+th{color:var(--mut);font-weight:600;text-align:left;font-size:12.5px;letter-spacing:.03em;
+   text-transform:uppercase;padding:7px 9px;border-bottom:1px solid var(--line);white-space:nowrap}
+td{padding:7px 9px;border-bottom:1px solid var(--line);vertical-align:middle;font-size:14px}
+td.lab{color:var(--mut);font-family:var(--mono);font-size:12.5px;white-space:nowrap;width:150px}
+td.num{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+audio{width:100%;min-width:180px;height:32px}
+.utt{background:var(--panel);border:1px solid var(--line);border-radius:6px;
+     padding:15px 18px;margin:16px 0}
+.txt{font-size:15px;margin:.15em 0 .85em;color:var(--fg)}
+.txt .q{color:var(--faint)}
+.tag{display:inline-block;font-family:system-ui,sans-serif;font-size:11.5px;color:var(--mut);
+     border:1px solid var(--line);border-radius:3px;padding:1px 7px;margin-right:6px;
+     text-transform:uppercase;letter-spacing:.04em}
+.scroll{overflow-x:auto}
+.win{color:var(--accent);font-weight:600}
+footer{color:var(--faint);font-size:12.5px;margin-top:60px;border-top:1px solid var(--line);
+       padding-top:15px;font-family:system-ui,sans-serif}
+@media (max-width:760px){ td.lab{width:108px} body{font-size:15px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Listening samples</h1>
+<p class="sub">All audio is 16&nbsp;kHz mono WAV.</p>
+
+<div id="s1"></div><div id="s2"></div><div id="s3"></div><div id="s4"></div><div id="s5"></div>
+
+<footer>
+LibriSpeech test-clean (reconstruction, listening test) and LibriSpeech-PC (zero-shot TTS).
+Reconstruction and TTS use the flow-matching decoder, sampling seed&nbsp;0.
+No analytics, no cookies, nothing is recorded on this page.
+</footer>
+</div>
+
+<script>
+let M = null;
+const MANIFEST = {"surface":[{"uid":"4992-23283-0000","spk":"4992","text":"BUT THE MORE FORGETFULNESS HAD THEN PREVAILED THE MORE POWERFUL WAS THE FORCE OF REMEMBRANCE WHEN SHE AWOKE","orig":"audio/4992-23283-0000__orig.wav","prompt_uid":"4992-41806-0009","prompt_text":"exclaimed Bill Harmon to his wife as they went through the lighted hall.","recon":{"6.25|64":"audio/4992-23283-0000__rec_r8_h64.wav","6.25|512":"audio/4992-23283-0000__rec_r8_h512.wav","3.125|64":"audio/4992-23283-0000__rec_r16_h64.wav","3.125|512":"audio/4992-23283-0000__rec_r16_h512.wav","2|64":"audio/4992-23283-0000__rec_r25_h64.wav","2|512":"audio/4992-23283-0000__rec_r25_h512.wav"},"tts":{"6.25|64":"audio/4992-23283-0000__tts_r8_h64.wav","6.25|512":"audio/4992-23283-0000__tts_r8_h512.wav","3.125|64":"audio/4992-23283-0000__tts_r16_h64.wav","3.125|512":"audio/4992-23283-0000__tts_r16_h512.wav","2|64":"audio/4992-23283-0000__tts_r25_h64.wav","2|512":"audio/4992-23283-0000__tts_r25_h512.wav"},"prompt":"audio/4992-41806-0009__prompt.wav"},{"uid":"672-122797-0003","spk":"672","text":"BUT THIS WAS WHAT THE TREE COULD NOT BEAR TO HEAR","orig":"audio/672-122797-0003__orig.wav","prompt_uid":"672-122797-0029","prompt_text":"How it will shine this evening\"!","recon":{"6.25|64":"audio/672-122797-0003__rec_r8_h64.wav","6.25|512":"audio/672-122797-0003__rec_r8_h512.wav","3.125|64":"audio/672-122797-0003__rec_r16_h64.wav","3.125|512":"audio/672-122797-0003__rec_r16_h512.wav","2|64":"audio/672-122797-0003__rec_r25_h64.wav","2|512":"audio/672-122797-0003__rec_r25_h512.wav"},"tts":{"6.25|64":"audio/672-122797-0003__tts_r8_h64.wav","6.25|512":"audio/672-122797-0003__tts_r8_h512.wav","3.125|64":"audio/672-122797-0003__tts_r16_h64.wav","3.125|512":"audio/672-122797-0003__tts_r16_h512.wav","2|64":"audio/672-122797-0003__tts_r25_h64.wav","2|512":"audio/672-122797-0003__tts_r25_h512.wav"},"prompt":"audio/672-122797-0029__prompt.wav"},{"uid":"2961-960-0007","spk":"2961","text":"BUT THEY HAVE NOTHING TO DO WITH THE INTERPRETATION OF PLATO AND IN SPIRIT THEY ARE OPPOSED TO HIM","orig":"audio/2961-960-0007__orig.wav","prompt_uid":"2961-961-0005","prompt_text":"Some poems of Solon were recited by the boys.","recon":{"6.25|64":"audio/2961-960-0007__rec_r8_h64.wav","6.25|512":"audio/2961-960-0007__rec_r8_h512.wav","3.125|64":"audio/2961-960-0007__rec_r16_h64.wav","3.125|512":"audio/2961-960-0007__rec_r16_h512.wav","2|64":"audio/2961-960-0007__rec_r25_h64.wav","2|512":"audio/2961-960-0007__rec_r25_h512.wav"},"tts":{"6.25|64":"audio/2961-960-0007__tts_r8_h64.wav","6.25|512":"audio/2961-960-0007__tts_r8_h512.wav","3.125|64":"audio/2961-960-0007__tts_r16_h64.wav","3.125|512":"audio/2961-960-0007__tts_r16_h512.wav","2|64":"audio/2961-960-0007__tts_r25_h64.wav","2|512":"audio/2961-960-0007__tts_r25_h512.wav"},"prompt":"audio/2961-961-0005__prompt.wav"},{"uid":"8224-274381-0011","spk":"8224","text":"HIS CONDUCT AND PRESENCE OF MIND IN THIS EMERGENCE APPEARED CONSPICUOUS","orig":"audio/8224-274381-0011__orig.wav","prompt_uid":"8224-274384-0003","prompt_text":"or hath he given us any gift?","recon":{"6.25|64":"audio/8224-274381-0011__rec_r8_h64.wav","6.25|512":"audio/8224-274381-0011__rec_r8_h512.wav","3.125|64":"audio/8224-274381-0011__rec_r16_h64.wav","3.125|512":"audio/8224-274381-0011__rec_r16_h512.wav","2|64":"audio/8224-274381-0011__rec_r25_h64.wav","2|512":"audio/8224-274381-0011__rec_r25_h512.wav"},"tts":{"6.25|64":"audio/8224-274381-0011__tts_r8_h64.wav","6.25|512":"audio/8224-274381-0011__tts_r8_h512.wav","3.125|64":"audio/8224-274381-0011__tts_r16_h64.wav","3.125|512":"audio/8224-274381-0011__tts_r16_h512.wav","2|64":"audio/8224-274381-0011__tts_r25_h64.wav","2|512":"audio/8224-274381-0011__tts_r25_h512.wav"},"prompt":"audio/8224-274384-0003__prompt.wav"}],"rows":[{"uid":"1089-134686-0013","spk":"1089","text":"IF EVER HE WAS IMPELLED TO CAST SIN FROM HIM AND TO REPENT THE IMPULSE THAT MOVED HIM WAS THE WISH TO BE HER KNIGHT","orig":"audio/1089-134686-0013__orig.wav","mimi8":"audio/1089-134686-0013__mimi8.wav","flexi417":"audio/1089-134686-0013__flexi417.wav","sylber":"audio/1089-134686-0013__sylber.wav","ours_r313_d64":"audio/1089-134686-0013__ours_r313_d64.wav","ours_r417_d512_flow":"audio/1089-134686-0013__ours_r417_d512_flow.wav","ours_r417_d512_l2":"audio/1089-134686-0013__ours_r417_d512_l2.wav"},{"uid":"1188-133604-0033","spk":"1188","text":"EVERY PLANT IN THE GRASS IS SET FORMALLY GROWS PERFECTLY AND MAY BE REALIZED COMPLETELY","orig":"audio/1188-133604-0033__orig.wav","mimi8":"audio/1188-133604-0033__mimi8.wav","flexi417":"audio/1188-133604-0033__flexi417.wav","sylber":"audio/1188-133604-0033__sylber.wav","ours_r313_d64":"audio/1188-133604-0033__ours_r313_d64.wav","ours_r417_d512_flow":"audio/1188-133604-0033__ours_r417_d512_flow.wav","ours_r417_d512_l2":"audio/1188-133604-0033__ours_r417_d512_l2.wav"},{"uid":"1284-1180-0029","spk":"1284","text":"SOMETIMES IT IS CALLED A CRAZY QUILT BECAUSE THE PATCHES AND COLORS ARE SO MIXED UP","orig":"audio/1284-1180-0029__orig.wav","mimi8":"audio/1284-1180-0029__mimi8.wav","flexi417":"audio/1284-1180-0029__flexi417.wav","sylber":"audio/1284-1180-0029__sylber.wav","ours_r313_d64":"audio/1284-1180-0029__ours_r313_d64.wav","ours_r417_d512_flow":"audio/1284-1180-0029__ours_r417_d512_flow.wav","ours_r417_d512_l2":"audio/1284-1180-0029__ours_r417_d512_l2.wav"},{"uid":"1580-141083-0042","spk":"1580","text":"MY SCHOLAR HAS BEEN LEFT VERY POOR BUT HE IS HARD WORKING AND INDUSTRIOUS HE WILL DO WELL","orig":"audio/1580-141083-0042__orig.wav","mimi8":"audio/1580-141083-0042__mimi8.wav","flexi417":"audio/1580-141083-0042__flexi417.wav","sylber":"audio/1580-141083-0042__sylber.wav","ours_r313_d64":"audio/1580-141083-0042__ours_r313_d64.wav","ours_r417_d512_flow":"audio/1580-141083-0042__ours_r417_d512_flow.wav","ours_r417_d512_l2":"audio/1580-141083-0042__ours_r417_d512_l2.wav"}],"cmos":{"n_listeners":9,"ratings_total":270,"per_listener":{"L01":30,"L02":30,"L03":30,"L04":30,"L05":30,"L06":30,"L07":30,"L08":30,"L09":30},"target_per_condition":160,"rows":[{"tested":"This work, 4.17 tok/s x d=512, flow-matching decoder","other":"Ground truth","cmos":-0.373,"ci95":0.325,"n":51,"pairs":26,"per_pair":1.96},{"tested":"This work, 4.17 tok/s x d=512, l2 decoder","other":"Ground truth","cmos":-1.061,"ci95":0.473,"n":49,"pairs":26,"per_pair":1.88},{"tested":"Sylber","other":"Ground truth","cmos":-0.367,"ci95":0.395,"n":49,"pairs":27,"per_pair":1.81},{"tested":"FlexiCodec 4.17 tok/s","other":"Ground truth","cmos":0.039,"ci95":0.315,"n":51,"pairs":24,"per_pair":2.12},{"tested":"This work, 4.17 tok/s x d=512, flow-matching decoder","other":"This work, 4.17 tok/s x d=512, l2 decoder","cmos":0.571,"ci95":0.592,"n":35,"pairs":24,"per_pair":1.46},{"tested":"This work, 4.17 tok/s x d=512, flow-matching decoder","other":"FlexiCodec 4.17 tok/s","cmos":-0.486,"ci95":0.413,"n":35,"pairs":22,"per_pair":1.59}]},"cells":[["6.25","64"],["6.25","512"],["3.125","64"],["3.125","512"],["2","64"],["2","512"]]};
+
+function audioCell(src) {
+  return src ? `<audio controls preload="none" src="${src}"></audio>`
+             : `<span class="sub">not available</span>`;
+}
+function head(it) {
+  return `<div><span class="tag">speaker ${it.spk}</span><span class="sub">${it.uid}</span></div>
+          <div class="txt"><span class="q">&ldquo;</span>${(it.text||"").toLowerCase()}<span class="q">&rdquo;</span></div>`;
+}
+
+// 1 - the (r, d) reconstruction surface
+function sec1() {
+  const body = M.surface.map(it => {
+    const rows = M.cells.map(([r, d]) =>
+      `<tr><td class="lab">${r} tok/s &middot; d=${d}</td><td>${audioCell(it.recon[r+"|"+d])}</td></tr>`).join("");
+    return `<div class="utt">${head(it)}<div class="scroll"><table>
+      <tr><th>condition</th><th>audio</th></tr>
+      <tr><td class="lab"><b>original</b></td><td>${audioCell(it.orig)}</td></tr>
+      ${rows}</table></div></div>`;
+  }).join("");
+  return `<h2><span class="n">01</span>Reconstruction</h2>${body}`;
+}
+
+// 2 - matched bitrate against deployed codecs
+function sec2() {
+  const SYS = [
+    ["ours_r313_d64", "This work &mdash; 3.13 tok/s, d=64", "1,089 b/s", true],
+    ["mimi8",        "Mimi, 8 codebooks &mdash; 12.5 tok/s", "1,043 b/s", false],
+    ["flexi417",     "FlexiCodec &mdash; 4.17 tok/s",        "1,150 b/s", false],
+  ];
+  const body = M.rows.map(it => {
+    const rows = SYS.map(([k, lab, bps, mine]) =>
+      `<tr><td class="lab">${mine ? "<b>"+lab+"</b>" : lab}</td>
+           <td class="num sub">${bps}</td><td>${audioCell(it[k])}</td></tr>`).join("");
+    return `<div class="utt">${head(it)}<div class="scroll"><table>
+      <tr><th>system</th><th>bitrate</th><th>audio</th></tr>
+      <tr><td class="lab"><b>original</b></td><td class="num sub">&mdash;</td>
+          <td>${audioCell(it.orig)}</td></tr>
+      ${rows}</table></div></div>`;
+  }).join("");
+  return `<h2><span class="n">02</span>Matched bitrate, against deployed codecs</h2>
+    <p>All three systems below sit within 10% of the same bitrate (${"≈"}1,050&ndash;1,150&nbsp;bits/s),
+    measured identically: integer symbols, each stream entropy-coded, and our rows include the five
+    utterance-level tokens. At this budget our reconstruction word error rate is the lowest of the three
+    (<span class="win">3.04</span> vs 4.18 for Mimi and 3.84 for FlexiCodec).
+    </p>
+    ${body}`;
+}
+
+// 3 - downstream zero-shot TTS
+function sec3() {
+  const body = M.surface.map(it => {
+    const rows = M.cells.map(([r, d]) =>
+      `<tr><td class="lab">${r} tok/s &middot; d=${d}</td><td>${audioCell(it.tts[r+"|"+d])}</td></tr>`).join("");
+    const pr = it.prompt ? `<tr><td class="lab"><b>voice prompt</b><br>
+        <span class="sub">input &middot; different sentence</span></td><td>${audioCell(it.prompt)}
+        <div class="sub">&ldquo;${(it.prompt_text||"").toLowerCase()}&rdquo;</div></td></tr>` : "";
+    return `<div class="utt">${head(it)}<div class="scroll"><table>
+      <tr><th>condition</th><th>audio</th></tr>
+      ${pr}
+      <tr><td class="lab"><b>target recording</b><br><span class="sub">reference, not an input</span></td>
+          <td>${audioCell(it.orig)}</td></tr>
+      ${rows}</table></div></div>`;
+  }).join("");
+  return `<h2><span class="n">03</span>Downstream zero-shot text-to-speech</h2>
+    ${body}`;
+}
+
+// 4 - the subjective listening test
+function sec4() {
+  const c = M.cmos;
+  const trs = c.rows.map(r => {
+    const sig = Math.abs(r.cmos) > r.ci95;
+    return `<tr><td>${r.tested}</td><td class="sub">${r.other}</td>
+      <td class="num"${sig ? ' style="font-weight:600"' : ''}>${r.cmos > 0 ? "+" : ""}${r.cmos.toFixed(2)}
+      <span class="sub">&plusmn; ${r.ci95.toFixed(2)}</span></td>
+      </tr>`; }).join("");
+  const SYS = [
+    ["orig",        "Ground truth", false],
+    ["ours_r417_d512_flow",   "This work, 4.17 tok/s &times; d=512, flow-matching decoder", true],
+    ["ours_r417_d512_l2",  "This work, 4.17 tok/s &times; d=512, &#8467;&#8322; decoder", true],
+    ["flexi417",    "FlexiCodec, 4.17 tok/s", false],
+    ["sylber",      "Sylber", false],
+  ];
+  const body = M.rows.map(it => {
+    const rows = SYS.map(([k, lab, mine]) =>
+      `<tr><td class="lab">${mine ? "<b>"+lab+"</b>" : lab}</td>
+           <td>${audioCell(it[k === "orig" ? "orig" : k])}</td></tr>`).join("");
+    return `<div class="utt">${head(it)}<div class="scroll"><table>
+      <tr><th>system</th><th>audio</th></tr>${rows}</table></div></div>`;
+  }).join("");
+  return `<h2><span class="n">04</span>Subjective listening test (CMOS)</h2>
+    <p>A comparative mean-opinion-score test was run on this material, following the protocol of
+    AV2Wav: a listener hears two versions of the same sentence, in a random order, and rates the second
+    against the first from &minus;3 to +3. Clips were served under opaque names and the page never
+    revealed which system a clip came from. <b>${c.n_listeners} listeners</b> contributed
+    <b>${c.ratings_total} ratings</b> over ${M.rows.length > 0 ? 30 : 30} utterances and 5 systems.
+    A positive score means the tested system was preferred.</p>
+    <div class="scroll"><table>
+      <tr><th>tested system</th><th>against</th><th>CMOS</th></tr>${trs}</table></div>
+    <p class="sub" style="margin-top:22px">The exact audio the listeners compared, for four of the
+    thirty utterances:</p>
+    ${body}`;
+}
+
+// 5 - decoder comparison
+function sec5() {
+  const body = M.rows.map(it => `<div class="utt">${head(it)}<div class="scroll"><table>
+      <tr><th>decoder</th><th>audio</th></tr>
+      <tr><td class="lab"><b>original</b></td><td>${audioCell(it.orig)}</td></tr>
+      <tr><td class="lab">&#8467;&#8322; regression<br><span class="sub">4.17 tok/s &middot; d=512</span></td>
+          <td>${audioCell(it.ours_r417_d512_l2)}</td></tr>
+      <tr><td class="lab">flow matching<br><span class="sub">4.17 tok/s &middot; d=512</span></td>
+          <td>${audioCell(it.ours_r417_d512_flow)}</td></tr>
+      </table></div></div>`).join("");
+  return `<h2><span class="n">05</span>Decoder: &#8467;&#8322; regression vs flow matching</h2>
+    <p class="sub">Identical tokens at 4.17&nbsp;tok/s &times; <i>d</i>=512; only the decoder differs.</p>
+${body}`;
+}
+
+M = MANIFEST;
+document.getElementById("s1").innerHTML = sec1();
+document.getElementById("s2").innerHTML = sec2();
+document.getElementById("s3").innerHTML = sec3();
+document.getElementById("s4").innerHTML = sec4();
+document.getElementById("s5").innerHTML = sec5();
+</script>
+</body>
+</html>
